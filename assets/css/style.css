@@ -71,6 +71,13 @@ fieldset legend {
   margin-bottom: 20px;
 }
 
+#btn-menu{
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 600px) {
@@ -104,6 +111,10 @@ fieldset legend {
     line-height: 20px;
     margin-bottom: 20px;
   }
+
+  #btn-menu{
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 762px) {
@@ -136,5 +147,9 @@ fieldset legend {
     text-indent: 20px;
     line-height: 20px;
     margin-bottom: 20px;
+  }
+
+  #btn-menu{
+    margin-bottom: 10px;
   }
 }
