@@ -6,6 +6,19 @@
   font-size: 16px;
 }
 
+body {
+  background-color:#ffffff!important;
+}
+
+.dark-mode {
+  background-color: rgb(19, 18, 18) !important;
+  color: white;
+}
+
+#btn-dark {
+  display: none;
+}
+
 #section1 {
   display: flex;
   justify-content: center;
@@ -81,6 +94,12 @@ fieldset legend {
   height: 50px;
 }
 
+/* botao download */
+
+#btn {
+  margin-left: 300px;
+}
+
 /* footer */
 
 .footer {
@@ -145,7 +164,22 @@ fieldset legend {
 
 /* RESPONSIVE */
 
+
 @media only screen and (max-width: 600px) {
+
+  #btn-dark {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   #section1 {
     display: flex;
     justify-content: center;
@@ -183,6 +217,9 @@ fieldset legend {
 }
 
 @media only screen and (max-width: 762px) {
+
+  
+
   #section1 {
     display: flex;
     justify-content: center;
