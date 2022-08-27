@@ -118,7 +118,9 @@ fieldset legend {
 }
 
 .footer li {
-  padding:0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .footer ul a {
@@ -176,8 +178,7 @@ fieldset legend {
   #navbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
   }
 
   #section1 {
@@ -219,6 +220,52 @@ fieldset legend {
 @media only screen and (max-width: 762px) {
 
   
+
+  #section1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #section2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  #section2 > p {
+    width: 100%;
+    text-align: justify;
+    text-indent: 20px;
+    margin-top: 20px;
+  }
+
+  .texto {
+    font-size: 15px;
+    text-align:justify;
+    text-indent: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  #btn-dark {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
   #section1 {
     display: flex;
