@@ -87,6 +87,13 @@ footer {
     margin-bottom:0;
   }
 
+  #botao-whatsapp {
+    position:fixed;
+    bottom: 150px;
+    right: 30px;
+    z-index: 9999;
+  }
+
   /* RESPONSIVIDADE */
 
 
