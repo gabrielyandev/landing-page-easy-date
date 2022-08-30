@@ -6,6 +6,26 @@
   font-size: 16px;
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: red;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(36, 33, 27);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(31, 20, 77);
+  border-radius: 20px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +35,7 @@ body {
 }
 
 .dark-mode {
-  background-color: rgb(19, 18, 18) !important;
+  background-color: rgb(5, 5, 34) !important;
   color: white;
 }
 
@@ -59,6 +79,10 @@ body {
   width: 100%;
   text-align: justify;
   text-indent: 20px;
+}
+
+#carouselExampleIndicators2 {
+  display: none;
 }
 
 /* sobre o sistema */
