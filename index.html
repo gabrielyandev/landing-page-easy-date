@@ -1,166 +1,249 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <title>Easy Date</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 100%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      "
+    >
+      <!-- modo dark -->
+      <li id="btn-dark">
+        <img
+          onclick="darkMode()"
+          src="assets/img/brightness.png"
+          id="dark-mode"
+          alt="modo-escuro"
+          width="20px"
+        />
+      </li>
 
-    <nav class="navbar navbar-expand-lg navbar-dark"
-    style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);">
-
-    <!-- modo dark -->
-    <li id="btn-dark">
-      <img onclick="darkMode()" src="assets/img/brightness.png" id="dark-mode" alt="modo-escuro" width="20px">
-    </li>
-
-   <a href="index.html"> <img class="img-logo" src="assets/img/logo.png" alt="logo" style="width: 90px" /> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-
-
-
-      <ul class="navbar-nav" id="navbar">
-
-        <li class="nav-item">
-          
+      <a href="index.html">
+        <img
+          class="img-logo"
+          src="assets/img/logo.png"
+          alt="logo"
+          style="width: 90px"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center text-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav" id="navbar">
+          <li class="nav-item">
             <a class="nav-link" href="#section1">Ínicio</a>
-         
-        </li>
-
-
-        <li class="nav-item">
-          
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#sobre-o-sistema">Sobre</a>
-          
-        </li>
-
-
-        <li class="nav-item">
-          
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Download</a>
-          
-        </li>
-
-
-        <li class="nav-item">
-          
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contato.html">Contatos</a>
-          
-        </li>
-
-
-
-
-      </ul>
-    </div>
-  </nav>
-
-  
-
-  <!-- slideshow -->
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="assets/img/slide1.png" alt="Primeiro Slide">
+          </li>
+        </ul>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/slide2.png" alt="Segundo Slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/slide3.png" alt="Terceiro Slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-  </div>
+    </nav>
 
-  <!-- fim slideshow -->
+    <!-- slideshow -->
 
-    <!-- slideshow-mobile-->
-
-    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/img/slide1.png" alt="Primeiro Slide">
+          <img
+            class="d-block w-100"
+            src="assets/img/slide1.png"
+            alt="Primeiro Slide"
+          />
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/img/slide2.png" alt="Segundo Slide">
+          <img
+            class="d-block w-100"
+            src="assets/img/slide2.png"
+            alt="Segundo Slide"
+          />
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/img/slide3.png" alt="Terceiro Slide">
+          <img
+            class="d-block w-100"
+            src="assets/img/slide3.png"
+            alt="Terceiro Slide"
+          />
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Anterior</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Próximo</span>
       </a>
     </div>
-  
+
     <!-- fim slideshow -->
 
-  
+    <!-- slideshow-mobile-->
+
+    <div
+      id="carouselExampleIndicators2"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="assets/img/slide1.png"
+            alt="Primeiro Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="assets/img/slide2.png"
+            alt="Segundo Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="assets/img/slide3.png"
+            alt="Terceiro Slide"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <!-- fim slideshow -->
+
     <section class="container" id="section1">
       <spam>
-        <img class="img-fluid" src="assets/img/pc easy date 1.png" alt="easydate-pc">
+        <img
+          class="img-fluid"
+          src="assets/img/pc easy date 1.png"
+          alt="easydate-pc"
+        />
       </spam>
-      <p> O <b> Easy Date </b>, sem dúvidas o melhor sistema para impressão de <i> etiquetas de validade</i>, com
-        controle
-        através de relatórios dos seus produtos de forma inteligente . Com ele o seu hotel, restaurante, bar,
-        pizzaria... terá um <b> controle fácil, rápido e prático </b> das validades dos seus produtos. O </b> Easy Date
-        </b>
-        é
-        muito fácil e prático de operar, com treinamento rápido seus colaboradores terão toda a facilidade
-        para a impressão das etiquetas de validade.
+      <p>
+        O <b> Easy Date </b>, sem dúvidas o melhor sistema para impressão de
+        <i> etiquetas de validade</i>, com controle através de relatórios dos
+        seus produtos de forma inteligente . Com ele o seu hotel, restaurante,
+        bar, pizzaria... terá um controle fácil, rápido e prático das validades
+        dos seus produtos. O Easy Date é muito fácil e prático de operar, com
+        treinamento rápido seus colaboradores terão toda a facilidade para a
+        impressão das etiquetas de validade.
       </p>
-  
-  
     </section>
 
-  
     <div class="container" id="section2">
-      <p> <i> O <b> Easy date </b> tem a facilidade em ter compatibilidade com diversos dispositivos, como computador,
-          tablet e celular.</i> Assim você só precisará conectar o dispositivo que mais lhe agrada e que você tenha
-        a sua disposição a uma impressora de etiquetas e assim o sistema <b> Easy Date </b> estará pronto para o
-        uso.
+      <p>
+        <i>
+          O <b> Easy date </b> tem a facilidade em ter compatibilidade com
+          diversos dispositivos, como computador, tablet e celular.</i
+        >
+        Assim você só precisará conectar o dispositivo que mais lhe agrada e que
+        você tenha a sua disposição a uma impressora de etiquetas e assim o
+        sistema <b> Easy Date </b> estará pronto para o uso.
       </p>
       <span>
-        <img class="img-fluid" src="assets/img/tablet easy date.png" alt="tablet-easydate" width="1000px">
+        <img
+          class="img-fluid"
+          src="assets/img/tablet easy date.png"
+          alt="tablet-easydate"
+          width="1000px"
+        />
       </span>
     </div>
-  
+
     <div class="container" id="sobre-o-sistema">
       <fieldset class="sobre">
         <legend>Sobre o sistema</legend>
@@ -168,40 +251,55 @@
       </fieldset>
       <div class="texto">
         <p>
-          O <b> Easy Date </b> surge a partir da observação da dificuldade que hotéis, bares, restaurantes tem para
-          controlar a validade dos seus produtos a partir do uso das <i> Etiquetas </i>. Esse é um processo que quando
-          feito manualmente exige muito tempo do colaborador, e que em muitos casos erros acontecem por
-          uma serie de fatores. Existem também outros métodos como balança que imprime etiqueta, porém
-          não tem um preço acessível, é preciso ter uma lista com códigos ao lado para poder manusear, o que
-          acaba demandando tempo para o colaborador.
-          Com o Easy Date esses problemas irão acabar. <i> No sistema ficam registrados todos os produtos que o
-            seu negócio usa, já com a validade recomendada pela <b> ANVISA </b> salvas na memória.</i> O menu é bem
-          prático e autoexplicativo, nele terá informações para qual estoque irá esse alimento (seco,
-          refrigerado, congelado...), se o alimento é uma proteína, vegetal, lácteo... assim facilitando o seu uso
-          e dando agilidade ao usuário para <i> imprimir a quantidade necessária de etiquetas. </i>
-          Como dito anteriormente, para utilizar o sistema é necessário um treinamento rápido e prático.
-          A indicação da Easy Date é que o sistema seja instalado em um tablet, pois além de facilitar o uso para
-          os colaboradores por ser touch screen, ele pode ser instalado em uma área que seja mais conveniente
-          do seu estabelecimento e também trará uma <i> redução de custo na aquisição dos equipamentos. </i>
+          O <b> Easy Date </b> surge a partir da observação da dificuldade que
+          hotéis, bares, restaurantes tem para controlar a validade dos seus
+          produtos a partir do uso das <i> Etiquetas </i>. Esse é um processo
+          que quando feito manualmente exige muito tempo do colaborador, e que
+          em muitos casos erros acontecem por uma serie de fatores. Existem
+          também outros métodos como balança que imprime etiqueta, porém não tem
+          um preço acessível, é preciso ter uma lista com códigos ao lado para
+          poder manusear, o que acaba demandando tempo para o colaborador. Com o
+          Easy Date esses problemas irão acabar.
+          <i>
+            No sistema ficam registrados todos os produtos que o seu negócio
+            usa, já com a validade recomendada pela <b> ANVISA </b> salvas na
+            memória.</i
+          >
+          O menu é bem prático e autoexplicativo, nele terá informações para
+          qual estoque irá esse alimento (seco, refrigerado, congelado...), se o
+          alimento é uma proteína, vegetal, lácteo... assim facilitando o seu
+          uso e dando agilidade ao usuário para
+          <i> imprimir a quantidade necessária de etiquetas. </i> Como dito
+          anteriormente, para utilizar o sistema é necessário um treinamento
+          rápido e prático. A indicação da Easy Date é que o sistema seja
+          instalado em um tablet, pois além de facilitar o uso para os
+          colaboradores por ser touch screen, ele pode ser instalado em uma área
+          que seja mais conveniente do seu estabelecimento e também trará uma
+          <i> redução de custo na aquisição dos equipamentos. </i>
         </p>
       </div>
     </div>
 
-
     <!-- botão whatsapp -->
 
     <div id="botao-whatsapp">
-      <a href="https://wa.me/5571996504413?text=Olá vim do site Easy Date e tenho interesse em adquirir o sistema" target="_blank">
-          <img src="assets/img/whatsapp.png" alt="botão de whatsapp" title="botão de whatsapp" width="50">
+      <a
+        href="https://wa.me/5571996504413?text=Olá vim do site Easy Date e tenho interesse em adquirir o sistema"
+        target="_blank"
+      >
+        <img
+          src="assets/img/whatsapp.png"
+          alt="botão de whatsapp"
+          title="botão de whatsapp"
+          width="50"
+        />
       </a>
+    </div>
 
-  </div>
+    <!-- fim botão whatsapp -->
 
-  <!-- fim botão whatsapp -->
-    
-  
     <!-- FOOTER -->
-  
+
     <div class="footer">
       <footer>
         <ul class="list-inline">
@@ -215,12 +313,23 @@
       </footer>
     </div>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
